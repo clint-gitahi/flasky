@@ -6,3 +6,12 @@ running tests --> heroku run python app.py
 
 Created postgresql-fluffy-70944 as DATABASE_URL
 
+
+
+postgres 
+1) i had to run this => export DATABASE_URL="postgresql:///klint"
+2) because there is a database called klint.
+3) to create a db i had to run the createdb klint like this => postgres@klint-ideapad-305-15IBD:~$ createdb klint 
+4) python db_create.py 
+5) python config.py
+
