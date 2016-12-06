@@ -15,6 +15,10 @@ postgres
 4) python db_create.py 
 5) python config.py
 6) resources - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04
+7 connecting to database run \c dbname
+8  list \d 
+9  list \d tablename
+
 
 database migration 
 1)
