@@ -15,7 +15,7 @@ app.config.from_object(os.environ['APP_SETTINGS'])
 db = SQLAlchemy(app)
 
 # import db schema
-from models import *
+from model import *
 
 
 # login required decorator

@@ -3,3 +3,6 @@ gunicorn -b 127.0.0.1:4000 app:app
 heroku local 
 
 running tests --> heroku run python app.py
+
+Created postgresql-fluffy-70944 as DATABASE_URL
+
