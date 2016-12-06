@@ -14,4 +14,7 @@ postgres
 3) to create a db i had to run the createdb klint like this => postgres@klint-ideapad-305-15IBD:~$ createdb klint 
 4) python db_create.py 
 5) python config.py
+6) resources - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04
 
+database migration 
+1)
