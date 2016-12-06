@@ -15,7 +15,7 @@ app.config.from_object(os.environ['APP_SETTINGS'])
 db = SQLAlchemy(app)
 
 # import db schema
-from model import *
+from models import *
 
 
 # login required decorator
@@ -65,11 +65,6 @@ def logout():
     session.pop('logged_in', None)
     flash('You were logged out.')
     return redirect(url_for('welcome'))
-
-
-# connect to database
-# def connect_db():
-#     return sqlite3.connect('posts.db')
 
 
 # start the server with the 'run()' method
