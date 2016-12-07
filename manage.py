@@ -21,7 +21,7 @@ def test():
 @manager.command
 def cov():
     """Runs the unit tests with coverage."""
-    cov = coverage.coverage(branch=True, include='projects/*')
+    cov = coverage.coverage(branch=True, include='projects/*', omit='*/__init__.py')
     cov.start()
     tests = unittest.TestLoader().discover('.')
     unittest.TextTestRunner(verbosity=2).run(tests)
