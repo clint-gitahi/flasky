@@ -3,6 +3,7 @@ from flask import Flask, render_template, redirect, url_for, session, flash, Blu
 from functools import wraps
 from projects import app, db  
 from projects.model import BlogPost 
+from flask_login import login_required
 
 
 ###############
@@ -14,23 +15,6 @@ home_blueprint = Blueprint(
     'home', __name__,
     template_folder='templates'
 )
-
-
-
-
-######################
-##helper function#####
-######################
-
-def login_required(f):
-    @wraps(f)
-    def wrap(*args, **kwargs):
-        if 'logged_in' in session:
-            return f(*args, **kwargs)
-        else:
-            flash('You need to login first.')
-            return redirect(url_for('users.login'))
-    return wrap
 
 
 ###############

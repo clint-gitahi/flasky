@@ -4,11 +4,9 @@ cffi==1.9.1
 click==6.6
 Flask==0.11.1
 Flask-Bcrypt==0.7.1
-Flask-Login==0.2.11
 Flask-Migrate==2.0.1
 Flask-Script==2.0.5
 Flask-SQLAlchemy==2.1
-Flask-Testing==0.6.1
 Flask-WTF==0.13.1
 gunicorn==19.6.0
 itsdangerous==0.24
