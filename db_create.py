@@ -1,4 +1,4 @@
-from app import db
+from projects import db
 from model import BlogPost
 
 # create the database and the db table
